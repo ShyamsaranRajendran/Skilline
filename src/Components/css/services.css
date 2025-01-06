@@ -1,0 +1,105 @@
+.Services {
+    padding: 2rem 5%; 
+    margin: 3rem auto; 
+    width: 90%;
+    border-radius: 8px;
+    
+}
+
+.Services h2 {
+    font-size: 2.5rem; 
+    font-weight: 600; 
+    text-align: center; 
+    margin-bottom: 1.5rem; 
+    color: #696984; 
+}
+
+.Services .images-company {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 90%; 
+    box-sizing: border-box; 
+}
+
+.images-company img {
+    height: 50px;
+    opacity: 0.8; /* Slight transparency for aesthetics */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.images-company img:hover {
+    transform: scale(1.1); 
+    opacity: 1;
+}
+
+.ServicesBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.Servicestitle {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #F48C06;
+    text-align: center;
+}
+
+.Servicestitle span {
+    color: #2F327D;
+}
+
+.servicesContent {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #696984;
+}
+
+.ServicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1.5rem; 
+    width: 100%;
+    padding: 1rem; 
+    box-sizing: border-box; 
+}
+
+.ServicesGrid .grid1 {
+    position: relative;
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.ServicesGrid .grid1:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.grid1 img {
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+.ServicesGrid .grid1 .cont-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2F327D;
+}

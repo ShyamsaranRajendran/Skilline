@@ -1,0 +1,155 @@
+.Hero {
+    width: 100%;
+    border-radius: 0px 0px 20rem 20rem;
+    height: 900px;
+    background-color: #FFF3E4;
+    overflow: hidden;
+}
+.HeroBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0rem 8rem;
+}
+
+.HeroBody .Hero-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10rem;
+    gap: 2rem;
+    width: 45%;
+}
+
+.Hero-left .Head-title{
+     font-size: 60px;
+     font-weight: 800;
+     color: #2F327D;
+}
+
+.Hero-left .Head-title span{
+     color: #F48C06;
+} 
+
+.Hero-left .Head-content{
+    font-size: 23px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.btns .Join{
+    border: solid 2px #F48C06;
+    border-radius: 30px;
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+    padding: 1rem 2rem;
+    background-color: #F48C06;
+}
+
+.btns .grp-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 24px;
+
+}
+
+.btns .grp-btn button{
+    padding: 1rem;
+    padding-left: 1.3rem;
+    border-radius: 50%;
+    background-color: white;
+    border:transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hero-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+
+
+}
+
+.Hero-right img{
+     height: 900px;
+}
+
+.pos1{
+  position: absolute;
+    top: 20rem;
+    right: 40rem;
+    width: auto !important;
+}
+
+.pos2{
+ position: absolute;
+    top: 35rem;
+    right: 10rem;
+    width: auto !important;
+}
+.pos3{
+ position: absolute;
+    top: 20rem;
+    right: 10rem;
+    padding: 0.4rem !important;
+    width: auto !important;
+}
+.pos4{
+    position: absolute;
+    top: 35rem;
+    right: 39rem;
+    width: auto !important;
+}
+
+.pos4 button{
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #D8587E;
+    color: white;
+    border-radius: 20px;
+    border: transparent;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pos3 img{
+   width: 100px !important;
+   height: 100px !important;
+}
+.Hero-right .card1{
+    width: 250px;
+    height: auto;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white */
+}
+
+.card1 img{
+    width: 50px;
+    height: 50px;
+}
+
+.card1 .card-con{
+    font-size: 14px;
+}
+
+.card1 .card-con p:first-child{
+    font-size: 18px;
+}
