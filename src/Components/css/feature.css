@@ -1,0 +1,82 @@
+.feature{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:0rem;
+}
+
+.bluebrown{
+     font-size: 60px;
+    font-weight: 800;
+    color: #2F327D;
+}
+
+.bluebrown span{
+   color:#F48C06 ;
+}
+
+.feature p{
+    font-size: 30px;
+    color: #696984;
+}
+
+.featuredgrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 1rem;
+   margin-top: 10rem;
+} 
+
+.bluebrown-1{
+     font-size: 40px;
+    font-weight: 800;
+    color: #2F327D;
+}
+
+.bluebrown-1 span{
+   color:#F48C06 ;
+}
+
+.featuredgrid .Contents{
+   display: flex;
+   flex-direction: column;
+   gap: 0.3rem;
+} 
+
+.featuredgrid .Contents .feature-data{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+} 
+/* 
+.featuredgrid .Contents .feature-data p{
+    font-size: 20px;
+}
+
+
+.para{
+    font-size: 20px;
+} */
+
+.seemore {
+    margin-top: 10rem;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    border: solid #F48C06 2px;
+    font-size: 25px;
+    color: #696984;
+    margin-bottom: 10rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.seemore:hover {
+    color: white;
+    background-color: #F48C06;
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
