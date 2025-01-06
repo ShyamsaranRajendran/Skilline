@@ -4,15 +4,17 @@
     height: 900px;
     background-color: #FFF3E4;
     overflow: hidden;
+    position: relative;
 }
-.HeroBody{
+
+.HeroBody {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 0rem 8rem;
 }
 
-.HeroBody .Hero-left{
+.HeroBody .Hero-left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -21,21 +23,22 @@
     width: 45%;
 }
 
-.Hero-left .Head-title{
-     font-size: 60px;
-     font-weight: 800;
-     color: #2F327D;
+.Hero-left .Head-title {
+    font-size: 60px;
+    font-weight: 800;
+    color: #2F327D;
 }
 
-.Hero-left .Head-title span{
-     color: #F48C06;
-} 
+.Hero-left .Head-title span {
+    color: #F48C06;
+}
 
-.Hero-left .Head-content{
+.Hero-left .Head-content {
     font-size: 23px;
+    color: #333;
 }
 
-.btns{
+.btns {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,7 +46,7 @@
     gap: 3rem;
 }
 
-.btns .Join{
+.btns .Join {
     border: solid 2px #F48C06;
     border-radius: 30px;
     font-size: 24px;
@@ -51,71 +54,116 @@
     font-weight: 800;
     padding: 1rem 2rem;
     background-color: #F48C06;
+    transition: all 0.3s ease;
 }
 
-.btns .grp-btn{
+.btns .Join:hover {
+    background-color: white;
+    color: #F48C06;
+    border: solid 2px #F48C06;
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btns .grp-btn {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
     font-size: 24px;
-
 }
 
-.btns .grp-btn button{
+.btns .grp-btn button {
     padding: 1rem;
     padding-left: 1.3rem;
     border-radius: 50%;
     background-color: white;
-    border:transparent;
+    border: transparent;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
-.Hero-right{
+.btns .grp-btn button:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.Hero-right {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 55%;
-
-
+    position: relative;
 }
 
-.Hero-right img{
-     height: 900px;
+.Hero-right img {
+    height: 900px;
 }
 
-.pos1{
-  position: absolute;
-    top: 20rem;
-    right: 40rem;
-    width: auto !important;
-}
-
-.pos2{
- position: absolute;
-    top: 35rem;
-    right: 10rem;
-    width: auto !important;
-}
-.pos3{
- position: absolute;
-    top: 20rem;
-    right: 10rem;
-    padding: 0.4rem !important;
-    width: auto !important;
-}
-.pos4{
+.Hero-right .card1 {
+    padding: 1.5rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
     position: absolute;
-    top: 35rem;
+    transition: all 0.3s ease;
+}
+
+.Hero-right .card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card1 img {
+    width: 50px;
+    height: 50px;
+}
+
+.card1 .card-con {
+    font-size: 14px;
+}
+
+.card1 .card-con p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2F327D;
+}
+
+.pos1 {
+    top: 18rem;
+    right: 40rem;
+
+    width: auto !important;
+}
+
+.pos2 {
+    top: 32rem;
+    right: 10rem;
+
+    width: auto !important;
+}
+
+.pos3 {
+    top: 18rem;
+    right: 10rem;
+    width: auto !important;
+    padding: 0.4rem !important;
+}
+
+.pos4 {
+    top: 32rem;
     right: 39rem;
     width: auto !important;
 }
 
-.pos4 button{
+.pos4 button {
     padding: 0.5rem 1rem;
     margin-top: 1rem;
     background-color: #D8587E;
@@ -124,32 +172,17 @@
     border: transparent;
     font-size: 16px;
     font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-.pos3 img{
-   width: 100px !important;
-   height: 100px !important;
-}
-.Hero-right .card1{
-    width: 250px;
-    height: auto;
-    display: flex;
-    gap: 1rem;
-    flex-direction: row;
-    padding: 1.5rem;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Transparent white */
+.pos4 button:hover {
+    background-color: white;
+    color: #D8587E;
+    border: solid 2px #D8587E;
+    transform: scale(1.05);
 }
 
-.card1 img{
-    width: 50px;
-    height: 50px;
-}
-
-.card1 .card-con{
-    font-size: 14px;
-}
-
-.card1 .card-con p:first-child{
-    font-size: 18px;
+.pos3 img {
+    width: 100px !important;
+    height: 100px !important;
 }
