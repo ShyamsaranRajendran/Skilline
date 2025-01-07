@@ -5,22 +5,22 @@ import F2 from "../assets/F2.png";
 import F3 from "../assets/F3.png";
 import F4 from "../assets/F4.png";
 import F5 from "../assets/F5.png";
-import icon7 from "../assets/icon7.svg"
-import icon8 from "../assets/icon8.svg";
-import icon9 from "../assets/icon9.svg";
+import icon7 from "../assets/icon2.svg"
+import icon8 from "../assets/icon2.svg";
+import icon9 from "../assets/icon2.svg";
 function Feature() {
   return (
     <div className="feature">
       <h2 className="bluebrown">
         Our <span color="brown">Features</span>
       </h2>
-      <p>
+      <p className='para'>
         This very extraordinary feature, can make learning activities more
         efficient
       </p>
       <div className="featuredgrid">
-        <img src={F1} alt="" />
-        <div className="Contents">
+        <img src={F1} alt="" className="grid" style={{gridTemplateColumns:"1fr 2fr"}} />
+        <div className="grid">
           <h2 className="bluebrown-1">
             A <span>user interface</span> designed for the classroom
           </h2>
@@ -99,7 +99,7 @@ function Feature() {
         </div>
       </div>
 
-      <button className='seemore'>See More Features</button>
+      <button className="seemore">See More Features</button>
     </div>
   );
 }

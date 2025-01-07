@@ -1,82 +1,158 @@
-.feature{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap:0rem;
+/* General Styles */
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Space between sections */
+    padding: 2rem;
+    margin: 0 auto;
 }
 
-.bluebrown{
-     font-size: 60px;
+.bluebrown {
+    font-size: 2.5rem;
     font-weight: 800;
     color: #2F327D;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-.bluebrown span{
-   color:#F48C06 ;
+.bluebrown span {
+    color: #F48C06;
 }
 
-.feature p{
-    font-size: 30px;
+.para {
+    font-size: 1.25rem;
     color: #696984;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 2rem;
 }
 
+/* Featured Grid Styles */
 .featuredgrid {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 80%;
-    gap: 1rem;
-   margin-top: 10rem;
-} 
+    width: 90%;
+    margin: 2rem auto;
+    gap: 2rem; /* Space between grid items */
+}
 
-.bluebrown-1{
-     font-size: 40px;
+.featuredgrid img {
+    width: 50%; /* Set responsive width */
+    max-width: 600px; /* Limit the max size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featuredgrid img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.Contents {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between text elements */
+    flex: 1;
+}
+
+.bluebrown-1 {
+    font-size: 2rem;
     font-weight: 800;
     color: #2F327D;
+    margin-bottom: 1rem;
 }
 
-.bluebrown-1 span{
-   color:#F48C06 ;
+.bluebrown-1 span {
+    color: #F48C06;
 }
 
-.featuredgrid .Contents{
-   display: flex;
-   flex-direction: column;
-   gap: 0.3rem;
-} 
-
-.featuredgrid .Contents .feature-data{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-} 
-/* 
-.featuredgrid .Contents .feature-data p{
-    font-size: 20px;
-}
-
-
-.para{
-    font-size: 20px;
-} */
-
-.seemore {
-    margin-top: 10rem;
-    border-radius: 30px;
-    padding: 1rem 2rem;
-    border: solid #F48C06 2px;
-    font-size: 25px;
+.featuredgrid .para {
+    font-size: 1.5rem;
     color: #696984;
-    margin-bottom: 10rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.feature-data {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between icon and text */
+    padding: 0.5rem 0; /* Add vertical spacing between rows for clarity */
+}
+
+.feature-data img {
+    border-radius: 50%; /* Ensures the image is perfectly circular */
+    width: 40px; /* Set a consistent size for the icons */
+    height: 40px; /* Ensures a perfect circle */
+    object-fit: cover; /* Ensures the image scales without distortion */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.feature-data img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+.feature-data p {
+    font-size: 1.5rem; /* Standard font size for text */
+    color: #696984; /* Subtle gray for readability */
+    line-height: 1.5; /* Spacing for better text clarity */
+    margin: 0; /* Remove default margins */
+}
+
+
+/* See More Button */
+.seemore {
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    color: #F48C06;
+    border: 2px solid #F48C06;
+    border-radius: 30px;
     background-color: transparent;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
 }
 
 .seemore:hover {
-    color: white;
     background-color: #F48C06;
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    color: white;
+    transform: scale(1.05); /* Slight enlarge on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .featuredgrid {
+        flex-direction: column; /* Stack grid items */
+        text-align: center;
+    }
+
+    .featuredgrid img {
+        width: 80%; /* Adjust image size for smaller screens */
+    }
+
+    .bluebrown {
+        font-size: 2rem; /* Adjust title size */
+    }
+
+    .bluebrown-1 {
+        font-size: 1.5rem; /* Adjust subtitle size */
+    }
+
+    .para {
+        font-size: 1rem;
+    }
+
+    .seemore {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
 }
